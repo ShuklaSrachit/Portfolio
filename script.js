@@ -286,4 +286,40 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 1500);
     });
   }
+
+  // ==========================================
+  // THEME TOGGLING (LIGHT & DARK)
+  // ==========================================
+  const themeToggleBtn = document.getElementById('theme-toggle-btn');
+  const themeToggleIcon = document.getElementById('theme-toggle-icon');
+  const metaColorScheme = document.querySelector('meta[name="color-scheme"]');
+
+  const updateThemeUI = (theme) => {
+    if (theme === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+      if (metaColorScheme) metaColorScheme.setAttribute('content', 'light');
+      themeToggleIcon.innerHTML = '<use href="#icon-moon"></use>';
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+      if (metaColorScheme) metaColorScheme.setAttribute('content', 'dark');
+      themeToggleIcon.innerHTML = '<use href="#icon-sun"></use>';
+    }
+  };
+
+  // Determine initial theme on load
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    updateThemeUI(savedTheme);
+  } else {
+    updateThemeUI('dark');
+  }
+
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      updateThemeUI(newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+  }
 });

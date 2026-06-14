@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Srachit Ravinath Shukla | Product, AI & Strategy</title>
+  <meta name="description" content="Portfolio of Srachit Shukla, engineering student specializing in Product Management, AI solutions, Business Analysis, and scalable products.">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SVG Sprite definitions for crisp icons without external weight -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="icon-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+      <rect x="2" y="9" width="4" height="12"/>
+      <circle cx="4" cy="4" r="2"/>
+    </symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+    </symbol>
+    <symbol id="icon-email" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+      <polyline points="22,6 12,13 2,6"/>
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="5" y1="12" x2="19" y2="12"/>
+      <polyline points="12,5 19,12 12,19"/>
+    </symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+      <polyline points="7 10 12 15 17 10"/>
+      <line x1="12" y1="15" x2="12" y2="3"/>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="18" y1="6" x2="6" y2="18"/>
+      <line x1="6" y1="6" x2="18" y2="18"/>
+    </symbol>
+    <symbol id="icon-print" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 6 2 18 2 18 9"/>
+      <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+      <rect x="6" y="14" width="12" height="8"/>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"/>
+    </symbol>
+    <symbol id="icon-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+      <rect x="9" y="9" width="6" height="6"/>
+      <line x1="9" y1="1" x2="9" y2="4"/>
+      <line x1="15" y1="1" x2="15" y2="4"/>
+      <line x1="9" y1="20" x2="9" y2="23"/>
+      <line x1="15" y1="20" x2="15" y2="23"/>
+      <line x1="20" y1="9" x2="23" y2="9"/>
+      <line x1="20" y1="15" x2="23" y2="15"/>
+      <line x1="1" y1="9" x2="4" y2="9"/>
+      <line x1="1" y1="15" x2="4" y2="15"/>
+    </symbol>
+    <symbol id="icon-bar-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="18" y1="20" x2="18" y2="10"/>
+      <line x1="12" y1="20" x2="12" y2="4"/>
+      <line x1="6" y1="20" x2="6" y2="14"/>
+    </symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+      <circle cx="9" cy="7" r="4"/>
+      <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+    </symbol>
+    <symbol id="icon-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+    </symbol>
+  </svg>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-dot"></span>
+        <span>Srachit Shukla</span>
+      </a>
+      
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#leadership" class="nav-link">Leadership</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button class="btn btn-secondary" id="nav-resume-btn" style="padding: 0.5rem 1rem; min-block-size: unset; font-size: 0.85rem; border-radius: 6px;">
+          Resume
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section-container hero-section" id="hero">
+      <div class="hero-brand-tags scroll-reveal">
+        <span class="hero-tag">Product Thinking</span>
+        <span class="hero-tag">AI &amp; Machine Learning</span>
+        <span class="hero-tag">Business Analysis</span>
+        <span class="hero-tag">Execution</span>
+      </div>
+      <h1 class="hero-title scroll-reveal">
+        Building <span>AI-Powered Products</span>, Business Solutions &amp; Scalable Systems
+      </h1>
+      <p class="hero-intro scroll-reveal">
+        Final-Year Engineering Student specializing in Product Management, Business Analysis, AI Solutions, and Data-Driven Decision Making. I transform business problems into products, automated workflows, and strategy.
+      </p>
+      <div class="hero-ctas scroll-reveal">
+        <a href="#projects" class="btn btn-primary">
+          <span>View Projects</span>
+          <svg class="icon" width="16" height="16"><use href="#icon-arrow-right"></use></svg>
+        </a>
+        <button class="btn btn-secondary" id="hero-resume-btn">
+          <span>View Resume</span>
+          <svg class="icon" width="16" height="16"><use href="#icon-download"></use></svg>
+        </button>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      </div>
+      
+      <div class="hero-socials scroll-reveal">
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+          <svg width="20" height="20"><use href="#icon-linkedin"></use></svg>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+          <svg width="20" height="20"><use href="#icon-github"></use></svg>
+        </a>
+        <a href="mailto:shuklasrachit7@gmail.com" class="social-link" aria-label="Send Email">
+          <svg width="20" height="20"><use href="#icon-email"></use></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section-container scroll-reveal" id="about">
+      <h2 class="text-gradient">About Me</h2>
+      <div class="about-grid" style="margin-top: 3rem;">
+        <div class="about-content">
+          <h3>Connecting Engineering, AI and Business Value</h3>
+          <p>
+            I am a final-year Mechanical Engineering student with Honors in Artificial Intelligence &amp; Machine Learning. My background enables me to understand the intricacies of core hardware processes while leveraging software, AI, and systems engineering to solve complex business operations.
+          </p>
+          <div class="about-highlight-box">
+            <p style="color: var(--color-text); font-weight: 500;">
+              Rather than building code for code's sake, my interest lies in building AI-first SaaS products, defining product strategies, conducting market analysis, and orchestrating scalable business systems.
+            </p>
+          </div>
+          <p>
+            My experience spans cross-functional collaboration, customer research, account analysis, competitor benchmarking, and business reporting. I thrive in roles at the intersection of business strategy and engineering execution.
+          </p>
+          
+          <div class="about-skills-focus" style="margin-top: 2rem;">
+            <div class="focus-item">
+              <svg class="focus-icon"><use href="#icon-check"></use></svg>
+              <span>Product Operations</span>
+            </div>
+            <div class="focus-item">
+              <svg class="focus-icon"><use href="#icon-check"></use></svg>
+              <span>Business Analysis</span>
+            </div>
+            <div class="focus-item">
+              <svg class="focus-icon"><use href="#icon-check"></use></svg>
+              <span>AI Product Management</span>
+            </div>
+            <div class="focus-item">
+              <svg class="focus-icon"><use href="#icon-check"></use></svg>
+              <span>Market &amp; Account Intelligence</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-viz">
+          <div class="viz-glow-ball"></div>
+          <div class="about-interactive-radar">
+            <div class="profile-badge">
+              <div class="profile-avatar">SS</div>
+              <h4 style="font-size: 1.2rem; margin-bottom: 0.25rem;">Srachit Shukla</h4>
+              <p style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600;">Aspiring Product Leader &amp; Strategist</p>
+            </div>
+            <div class="highlight-tag" style="background: rgba(255, 255, 255, 0.04);">
+              <svg width="16" height="16" style="color: var(--color-accent-secondary-raw);"><use href="#icon-cpu"></use></svg>
+              <span style="font-size: 0.85rem; font-weight: 500;">Honors in AI &amp; Machine Learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Metrics Section -->
+    <section class="metrics-section">
+      <div class="section-container">
+        <div class="metrics-grid">
+          <div class="metric-item">
+            <span class="metric-number" data-target="1000">0</span>
+            <span class="metric-label">Industrial Buyers Analyzed</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number" data-target="1000">0</span>
+            <span class="metric-label">Candidates Coordinated</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number" data-target="500">0</span>
+            <span class="metric-label">Event Participants Managed</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number" data-target="3">0</span>
+            <span class="metric-label">AI Products Built</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number" data-target="4">0</span>
+            <span class="metric-label">Leadership Positions</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section class="section-container scroll-reveal" id="experience">
+      <h2 class="text-gradient">Experience</h2>
+      
+      <div class="timeline">
+        <!-- Teceze India -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Business Solutions Associate Intern</h3>
+              <p class="timeline-company">Teceze India</p>
+            </div>
+            <span class="timeline-date">Nov 2024 - Apr 2025</span>
+          </div>
+          <p>
+            Led business intelligence workflows to target and capture new B2B accounts. Conducted primary stakeholder identification and business analysis to drive solution engineering.
+          </p>
+          <div class="timeline-highlights">
+            <div class="highlight-tag">
+              <svg><use href="#icon-users"></use></svg>
+              <span>Customer Research</span>
+            </div>
+            <div class="highlight-tag">
+              <svg><use href="#icon-bar-chart"></use></svg>
+              <span>Market Intelligence</span>
+            </div>
+            <div class="highlight-tag">
+              <svg><use href="#icon-briefcase"></use></svg>
+              <span>Requirement Gathering</span>
+            </div>
+            <div class="highlight-tag">
+              <svg><use href="#icon-users"></use></svg>
+              <span>Stakeholder Mapping</span>
+            </div>
+            <div class="highlight-tag">
+              <svg><use href="#icon-briefcase"></use></svg>
+              <span>Cross-Functional Collab</span>
+            </div>
+            <div class="highlight-tag">
+              <svg><use href="#icon-bar-chart"></use></svg>
+              <span>Account Intelligence</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Universal Tools India -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Operations, Market Insights &amp; Product Inputs Intern</h3>
+              <p class="timeline-company">Universal Tools India</p>
+            </div>
+            <span class="timeline-date">May 2024 - Jul 2024</span>
+          </div>
+          <p>
+            Spearheaded product-market research for manufacturing and tooling sectors. Gathered data points from 1000+ industrial buyers to deliver core product development inputs.
+          </p>
+          <div class="timeline-highlights">
+            <div class="highlight-tag">
+              <svg><use href="#icon-users"></use></svg>
+              <span>Customer Research</span>
+            </div>
+            <div class="highlight-tag">
+              <svg><use href="#icon-cpu"></use></svg>
+              <span>Product Research</span>
+            </div>
+            <div class="highlight-tag">
+              <svg><use href="#icon-bar-chart"></use></svg>
+              <span>Market Analysis</span>
+            </div>
+            <div class="highlight-tag">
+              <svg><use href="#icon-briefcase"></use></svg>
+              <span>Competitor Benchmarking</span>
+            </div>
+            <div class="highlight-tag">
+              <svg><use href="#icon-cpu"></use></svg>
+              <span>Product Inputs</span>
+            </div>
+            <div class="highlight-tag">
+              <svg><use href="#icon-bar-chart"></use></svg>
+              <span>Business Reporting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section-container scroll-reveal" id="projects">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem; flex-wrap: wrap; gap: 1.5rem;">
+        <div>
+          <h2 class="text-gradient" style="margin-bottom: 0;">Featured Projects</h2>
+          <p style="margin-top: 0.5rem;">Tangible validation of AI solutions and product thinking.</p>
+        </div>
+        <div class="projects-tabs">
+          <button class="tab-btn active" data-filter="all">All</button>
+          <button class="tab-btn" data-filter="ai">AI / ML</button>
+          <button class="tab-btn" data-filter="product">Product / SaaS</button>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="card project-card" data-category="product ai">
+          <div class="project-icon-wrapper">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M21 12H3M12 3v18"/></svg>
+          </div>
+          <span class="badge" style="align-self: flex-start; margin-bottom: 0.75rem;">AI SaaS</span>
+          <h3 class="project-title">AI Product Copilot</h3>
+          <p class="project-desc">
+            An intelligent workspace that transforms unstructured product ideas, rough audio transcriptions, and meeting notes into developer-ready product documents.
+          </p>
+          <div class="project-features">
+            <div class="project-feature-item">
+              <svg width="14" height="14"><use href="#icon-check"></use></svg>
+              <span>PRD Generation &amp; Structuring</span>
+            </div>
+            <div class="project-feature-item">
+              <svg width="14" height="14"><use href="#icon-check"></use></svg>
+              <span>Automated User Stories &amp; Acceptance Criteria</span>
+            </div>
+            <div class="project-feature-item">
+              <svg width="14" height="14"><use href="#icon-check"></use></svg>
+              <span>Sprint Plan Orchestration</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <span style="font-size: 0.85rem; color: var(--color-text-subtle);">Stack: LLM API, Node, React</span>
+            <a href="#" class="btn-text">
+              <span>Case Study</span>
+              <svg width="14" height="14"><use href="#icon-arrow-right"></use></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card project-card" data-category="product">
+          <div class="project-icon-wrapper" style="background: rgba(139, 92, 246, 0.1); color: rgb(167, 139, 250);">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <span class="badge badge-purple" style="align-self: flex-start; margin-bottom: 0.75rem;">Relationship OS</span>
+          <h3 class="project-title">RelationshipOS</h3>
+          <p class="project-desc">
+            A customizable, clean personal CRM built for recruiters, startup founders, and mentors to track key outreach interactions, follow-ups, and relationship health.
+          </p>
+          <div class="project-features">
+            <div class="project-feature-item">
+              <svg width="14" height="14"><use href="#icon-check"></use></svg>
+              <span>AI-Driven Meeting Notes Summarizer</span>
+            </div>
+            <div class="project-feature-item">
+              <svg width="14" height="14"><use href="#icon-check"></use></svg>
+              <span>Smart Follow-up Reminders &amp; Tracking</span>
+            </div>
+            <div class="project-feature-item">
+              <svg width="14" height="14"><use href="#icon-check"></use></svg>
+              <span>Relationship Health Analytics Dashboard</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <span style="font-size: 0.85rem; color: var(--color-text-subtle);">Stack: Tailwind, NextJS, Supabase</span>
+            <a href="#" class="btn-text">
+              <span>View Demo</span>
+              <svg width="14" height="14"><use href="#icon-arrow-right"></use></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card project-card" data-category="ai">
+          <div class="project-icon-wrapper">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <span class="badge" style="align-self: flex-start; margin-bottom: 0.75rem;">ML / Engineering</span>
+          <h3 class="project-title">Steel Property Prediction</h3>
+          <p class="project-desc">
+            A machine learning solution analyzing steel production variables and industrial datasets to predict mechanical properties, reducing quality assurance testing times.
+          </p>
+          <div class="project-features">
+            <div class="project-feature-item">
+              <svg width="14" height="14"><use href="#icon-check"></use></svg>
+              <span>Model Comparison (Random Forest, SVM, Neural Nets)</span>
+            </div>
+            <div class="project-feature-item">
+              <svg width="14" height="14"><use href="#icon-check"></use></svg>
+              <span>Material Dataset Data Pipeline &amp; Preprocessing</span>
+            </div>
+            <div class="project-feature-item">
+              <svg width="14" height="14"><use href="#icon-check"></use></svg>
+              <span>Interactive Analytics Performance Dashboard</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <span style="font-size: 0.85rem; color: var(--color-text-subtle);">Stack: Python, Scikit-Learn, Streamlit</span>
+            <a href="#" class="btn-text">
+              <span>GitHub Code</span>
+              <svg width="14" height="14"><use href="#icon-arrow-right"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section-container scroll-reveal" id="skills">
+      <h2 class="text-gradient">Skills</h2>
+      <p style="margin-top: 0.5rem; margin-bottom: 3rem;">A breakdown of competencies from business strategy to technical implementation.</p>
+      
+      <div class="skills-container">
+        <!-- Product Management -->
+        <div class="card skill-category-card">
+          <h3>
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+            <span>Product Management</span>
+          </h3>
+          <div class="skills-list">
+            <span class="skill-tag">Product Discovery</span>
+            <span class="skill-tag">Product Analytics</span>
+            <span class="skill-tag">User Research</span>
+            <span class="skill-tag">Requirement Gathering</span>
+            <span class="skill-tag">Agile</span>
+            <span class="skill-tag">Scrum</span>
+          </div>
+        </div>
+
+        <!-- Business Analysis -->
+        <div class="card skill-category-card">
+          <h3>
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83M22 12A10 10 0 0 0 12 2v10z"/></svg>
+            <span>Business Analysis</span>
+          </h3>
+          <div class="skills-list">
+            <span class="skill-tag">Process Mapping</span>
+            <span class="skill-tag">Market Research</span>
+            <span class="skill-tag">Competitive Analysis</span>
+            <span class="skill-tag">KPI Tracking</span>
+            <span class="skill-tag">Workflow Analysis</span>
+          </div>
+        </div>
+
+        <!-- AI & ML -->
+        <div class="card skill-category-card">
+          <h3>
+            <svg width="20" height="20"><use href="#icon-cpu"></use></svg>
+            <span>AI &amp; Machine Learning</span>
+          </h3>
+          <div class="skills-list">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Scikit Learn</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+          </div>
+        </div>
+
+        <!-- Analytics -->
+        <div class="card skill-category-card">
+          <h3>
+            <svg width="20" height="20"><use href="#icon-bar-chart"></use></svg>
+            <span>Analytics</span>
+          </h3>
+          <div class="skills-list">
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Tableau</span>
+            <span class="skill-tag">Excel</span>
+            <span class="skill-tag">Dashboarding</span>
+            <span class="skill-tag">Reporting</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="section-container scroll-reveal" id="leadership">
+      <h2 class="text-gradient">Leadership &amp; Coordination</h2>
+      <p style="margin-top: 0.5rem; margin-bottom: 3rem;">Proven capability to organize events, guide initiatives, and drive execution.</p>
+      
+      <div class="leadership-grid">
+        <!-- Training & Placement Cell -->
+        <div class="card leadership-card">
+          <div class="leadership-header">
+            <div class="leadership-icon">
+              <svg width="20" height="20"><use href="#icon-users"></use></svg>
+            </div>
+            <div>
+              <span class="leadership-role">Coordinator</span>
+              <h3 class="leadership-title">Training &amp; Placement Cell</h3>
+            </div>
+          </div>
+          <p class="leadership-desc">
+            Coordinated end-to-end recruitment operations involving 1000+ candidates, managing recruiter communication and logistics for major campus placement drives.
+          </p>
+        </div>
+
+        <!-- EDSI Cell -->
+        <div class="card leadership-card">
+          <div class="leadership-header">
+            <div class="leadership-icon" style="background: rgba(59, 130, 246, 0.1); color: var(--color-accent);">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div>
+              <span class="leadership-role">Organizer</span>
+              <h3 class="leadership-title">EDSI Cell</h3>
+            </div>
+          </div>
+          <p class="leadership-desc">
+            Organized Pune IIC Innovators Summit involving 500+ participants, aligning schedules, student innovators, tech speakers, and administrative requirements.
+          </p>
+        </div>
+
+        <!-- MESA -->
+        <div class="card leadership-card">
+          <div class="leadership-header">
+            <div class="leadership-icon">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </div>
+            <div>
+              <span class="leadership-role">Head of Marketing</span>
+              <h3 class="leadership-title">MESA</h3>
+            </div>
+          </div>
+          <p class="leadership-desc">
+            Led student marketing activities for the Mechanical Engineering Student Association, managing outreach strategies, design production, and student announcements.
+          </p>
+        </div>
+
+        <!-- Rotaract Club -->
+        <div class="card leadership-card">
+          <div class="leadership-header">
+            <div class="leadership-icon" style="background: rgba(59, 130, 246, 0.1); color: var(--color-accent);">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div>
+              <span class="leadership-role">Managing Director</span>
+              <h3 class="leadership-title">Rotaract Club</h3>
+            </div>
+          </div>
+          <p class="leadership-desc">
+            Oversaw administrative and coordination activities for community service projects, aligning student volunteer resources and driving local impact programs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Thought Leadership Insights -->
+    <section class="section-container scroll-reveal" id="insights">
+      <h2 class="text-gradient">Insights &amp; Product Thinking</h2>
+      <p style="margin-top: 0.5rem; margin-bottom: 3rem;">Writing and critical thinking on building products and business systems.</p>
+      
+      <div class="insights-grid">
+        <!-- Card 1 -->
+        <div class="card insight-card">
+          <div class="insight-meta">
+            <span>Product Strategy</span>
+            <span>&bull;</span>
+            <span>4 min read</span>
+          </div>
+          <h3 class="insight-title">Building AI Product Copilot</h3>
+          <p class="insight-desc">
+            How I applied large language models to automate product development workflows, from raw unstructured idea outlines to sprint-ready JIRA issues.
+          </p>
+          <a href="#" class="btn-text">
+            <span>Read Article</span>
+            <svg width="14" height="14"><use href="#icon-arrow-right"></use></svg>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card insight-card">
+          <div class="insight-meta">
+            <span>Market Discovery</span>
+            <span>&bull;</span>
+            <span>6 min read</span>
+          </div>
+          <h3 class="insight-title">Product Discovery Lessons from IMTEX</h3>
+          <p class="insight-desc">
+            An analysis of hardware user research and product benchmarking, detailing how industrial tools are adapting to digital interfaces.
+          </p>
+          <a href="#" class="btn-text">
+            <span>Read Article</span>
+            <svg width="14" height="14"><use href="#icon-arrow-right"></use></svg>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card insight-card">
+          <div class="insight-meta">
+            <span>AI Solutions</span>
+            <span>&bull;</span>
+            <span>5 min read</span>
+          </div>
+          <h3 class="insight-title">AI in Manufacturing</h3>
+          <p class="insight-desc">
+            Investigating how neural network property prediction models can optimize quality assurance pipelines in industrial steel processing.
+          </p>
+          <a href="#" class="btn-text">
+            <span>Read Article</span>
+            <svg width="14" height="14"><use href="#icon-arrow-right"></use></svg>
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card insight-card">
+          <div class="insight-meta">
+            <span>Product Frameworks</span>
+            <span>&bull;</span>
+            <span>4 min read</span>
+          </div>
+          <h3 class="insight-title">Product Thinking for Engineers</h3>
+          <p class="insight-desc">
+            Transitioning the mind from 'how to build' to 'why to build'. Aligning engineering choices with customer pain points and business goals.
+          </p>
+          <a href="#" class="btn-text">
+            <span>Read Article</span>
+            <svg width="14" height="14"><use href="#icon-arrow-right"></use></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-container scroll-reveal" id="contact">
+      <h2 class="text-gradient">Get in Touch</h2>
+      <p style="margin-top: 0.5rem; margin-bottom: 4rem;">Let's talk about product opportunities, business operations, or AI systems.</p>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div>
+            <h3 style="margin-bottom: 1rem;">Let's Connect</h3>
+            <p>
+              I am open to discussions on Associate Product Manager, Business Analyst, Founder's Office, and GTM engineering roles. Feel free to reach out via email or connect on professional socials.
+            </p>
+          </div>
+          
+          <div class="contact-methods">
+            <div class="contact-method-item">
+              <div class="contact-icon">
+                <svg width="22" height="22"><use href="#icon-email"></use></svg>
+              </div>
+              <div class="contact-method-details">
+                <h4>Email</h4>
+                <p><a href="mailto:shuklasrachit7@gmail.com">shuklasrachit7@gmail.com</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-method-item">
+              <div class="contact-icon">
+                <svg width="22" height="22"><use href="#icon-linkedin"></use></svg>
+              </div>
+              <div class="contact-method-details">
+                <h4>LinkedIn</h4>
+                <p><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com/in/srachit-shukla</a></p>
+              </div>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="contact-icon">
+                <svg width="22" height="22"><use href="#icon-github"></use></svg>
+              </div>
+              <div class="contact-method-details">
+                <h4>GitHub</h4>
+                <p><a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/srachit-shukla</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <!-- Contact Form with Floating Labels and Validity State -->
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <input type="text" id="form-name" class="form-input" placeholder=" " required>
+              <label for="form-name" class="form-label">Full Name</label>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" id="form-email" class="form-input" placeholder=" " required>
+              <label for="form-email" class="form-label">Email Address</label>
+            </div>
+            
+            <div class="form-group">
+              <textarea id="form-message" class="form-input" placeholder=" " required></textarea>
+              <label for="form-message" class="form-label">How can I help you?</label>
+            </div>
+            
+            <div id="form-status-msg" class="form-status" aria-live="polite"></div>
+
+            <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
+              <span>Send Message</span>
+              <svg width="16" height="16"><use href="#icon-arrow-right"></use></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="hero-socials">
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+          <svg width="18" height="18"><use href="#icon-linkedin"></use></svg>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+          <svg width="18" height="18"><use href="#icon-github"></use></svg>
+        </a>
+        <a href="mailto:shuklasrachit7@gmail.com" class="social-link" aria-label="Send Email">
+          <svg width="18" height="18"><use href="#icon-email"></use></svg>
+        </a>
+      </div>
+      <p class="footer-text">Designed &amp; Built by Srachit Shukla</p>
+      <p class="footer-text" style="font-size: 0.8rem; margin-top: -0.5rem;">&copy; 2026. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Premium Resume Viewer Dialog -->
+  <dialog class="resume-dialog" id="resume-dialog">
+    <div class="resume-dialog-header">
+      <h3 class="resume-dialog-title">Professional Resume</h3>
+      <div class="resume-dialog-actions">
+        <button class="btn btn-secondary" id="print-resume-btn" style="padding: 0.4rem 0.8rem; min-block-size: unset; font-size: 0.8rem; border-radius: 6px;">
+          <svg width="14" height="14" style="margin-right: 0.25rem; vertical-align: middle;"><use href="#icon-print"></use></svg>Print Resume
+        </button>
+        <button class="close-dialog-btn" id="close-resume-btn" aria-label="Close resume viewer">
+          <svg width="18" height="18"><use href="#icon-close"></use></svg>
+        </button>
+      </div>
+    </div>
+    <div class="resume-dialog-body">
+      <div class="resume-paper" id="resume-content-area">
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <h2 style="font-size: 2.2rem; margin-bottom: 0.25rem;">Srachit Ravinath Shukla</h2>
+          <div class="resume-contact-info" style="justify-content: center;">
+            <span>Pune, India</span>
+            <span>shuklasrachit7@gmail.com</span>
+            <span>linkedin.com/in/srachit-shukla</span>
+            <span>github.com/srachit-shukla</span>
+          </div>
+        </div>
+
+        <div class="resume-section">
+          <h3 class="resume-section-title">Education</h3>
+          <div class="resume-entry">
+            <div class="resume-entry-header">
+              <div>
+                <span class="resume-entry-title" style="font-weight: 700;">Bachelor of Engineering (Mechanical Engineering)</span>
+                <div class="resume-entry-company" style="font-style: italic;">Honors in Artificial Intelligence &amp; Machine Learning</div>
+              </div>
+              <span class="resume-entry-date">Graduation: May 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-section">
+          <h3 class="resume-section-title">Professional Experience</h3>
+          
+          <div class="resume-entry">
+            <div class="resume-entry-header">
+              <div>
+                <span class="resume-entry-title" style="font-weight: 700; color: #FFF;">Business Solutions Associate Intern</span>
+                <div class="resume-entry-company">Teceze India</div>
+              </div>
+              <span class="resume-entry-date">Nov 2024 - Apr 2025</span>
+            </div>
+            <ul>
+              <li>Identified critical business operations targets and executed primary account identification &amp; stakeholder mapping.</li>
+              <li>Conducted stakeholder intelligence reports and collected feedback parameters to drive technical requirement gathering.</li>
+              <li>Orchestrated cross-functional communication pipelines between technology delivery units and business stakeholders.</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="resume-entry-header">
+              <div>
+                <span class="resume-entry-title" style="font-weight: 700; color: #FFF;">Operations, Market Insights &amp; Product Inputs Intern</span>
+                <div class="resume-entry-company">Universal Tools India</div>
+              </div>
+              <span class="resume-entry-date">May 2024 - Jul 2024</span>
+            </div>
+            <ul>
+              <li>Surveyed and compiled market benchmarks and competitors, drawing insights on product performance and features.</li>
+              <li>Aggregated operational feedback and analyzed data parameters from 1000+ B2B buyers to provide product development inputs.</li>
+              <li>Developed actionable business intelligence dashboards to optimize regional B2B client reporting mechanisms.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="resume-section">
+          <h3 class="resume-section-title">Key Projects</h3>
+          
+          <div class="resume-entry">
+            <div class="resume-entry-header">
+              <span class="resume-entry-title" style="font-weight: 700; color: #FFF;">AI Product Copilot</span>
+              <span class="resume-entry-date">Dec 2025</span>
+            </div>
+            <ul>
+              <li>Developed an LLM-orchestrated web platform converting unorganized developer/manager transcripts and notes into structured documents (PRDs, Agile User Stories, Acceptance Criteria).</li>
+              <li>Incorporated flexible template selection and export parameters mapping directly to developer ticketing specifications.</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="resume-entry-header">
+              <span class="resume-entry-title" style="font-weight: 700; color: #FFF;">RelationshipOS</span>
+              <span class="resume-entry-date">Oct 2025</span>
+            </div>
+            <ul>
+              <li>Built a high-fidelity personal relationship manager and CRM platform optimized for network growth, recruiters, and early-stage startup founders.</li>
+              <li>Designed AI-assisted meeting summaries and automated reminder workflows to maintain communication cadence.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="resume-section">
+          <h3 class="resume-section-title">Core Skills</h3>
+          <div class="resume-skills-grid">
+            <div class="resume-skills-cat">
+              <p><strong>Product Management:</strong> Product Discovery, Analytics, User Research, Agile/Scrum</p>
+              <p style="margin-top: 0.5rem;"><strong>Business Analysis:</strong> Market Research, Process Mapping, Competitive Analysis, KPI Tracking</p>
+            </div>
+            <div class="resume-skills-cat">
+              <p><strong>AI &amp; ML:</strong> Python, TensorFlow, Scikit-Learn, Prompt Engineering, Pandas, NumPy</p>
+              <p style="margin-top: 0.5rem;"><strong>Data &amp; Operations:</strong> SQL, Tableau, Dashboarding, Stakeholder Alignment</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-section" style="margin-bottom: 0;">
+          <h3 class="resume-section-title">Leadership</h3>
+          <div class="resume-entry" style="margin-bottom: 0;">
+            <ul>
+              <li><strong>Training &amp; Placement Cell Coordinator:</strong> Led logistical operations, scheduling, and candidate tracking for 1000+ campus recruitment drives.</li>
+              <li><strong>EDSI Cell Organizer:</strong> Managed schedules, coordination logistics, and vendor communications for the 500+ participant Pune IIC Innovators Summit.</li>
+              <li><strong>MESA Marketing Head:</strong> Directed student marketing initiatives and social communications for the Mechanical Engineering Student Association.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- JS Interactions Script -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>

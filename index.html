@@ -3,19 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="light dark">
+  <meta name="color-scheme" content="light">
   
   <title>Srachit Ravinath Shukla | Product, AI &amp; Strategy</title>
   <meta name="description" content="Portfolio of Srachit Shukla, engineering graduate specializing in Product Management, AI solutions, Business Analysis, and scalable products.">
-  
-  <script>
-    (function() {
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme === 'light') {
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
-    })();
-  </script>
   
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="style.css">
@@ -104,8 +95,7 @@
   <header class="site-header" id="site-header">
     <div class="nav-container">
       <a href="#" class="logo">
-        <span class="logo-dot"></span>
-        <span>Srachit Shukla</span>
+        <span>Srachit</span>
       </a>
       
       <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
@@ -115,59 +105,56 @@
       </button>
 
       <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link active">Home</a>
         <a href="#about" class="nav-link">About</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#leadership" class="nav-link">Leadership</a>
+        <a href="#experience" class="nav-link">Service</a>
+        <a href="#projects" class="nav-link">Portfolio</a>
+        <a href="#resume-dialog" class="nav-link" id="nav-resume-btn">Resume</a>
+        <a href="#insights" class="nav-link">Blog</a>
         <a href="#contact" class="nav-link">Contact</a>
-        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle light and dark theme" style="margin-left: 0.5rem;">
-          <svg width="18" height="18" id="theme-toggle-icon"><use href="#icon-sun"></use></svg>
-        </button>
-        <button class="btn btn-secondary" id="nav-resume-btn" style="padding: 0.5rem 1rem; min-block-size: unset; font-size: 0.85rem; border-radius: 6px;">
-          Resume
-        </button>
       </nav>
     </div>
   </header>
 
   <main>
     <!-- Hero Section -->
-    <section class="section-container hero-section" id="hero">
-      <div class="hero-brand-tags scroll-reveal">
-        <span class="hero-tag">Product Thinking</span>
-        <span class="hero-tag">AI &amp; Machine Learning</span>
-        <span class="hero-tag">Business Analysis</span>
-        <span class="hero-tag">Execution</span>
-      </div>
-      <h1 class="hero-title scroll-reveal">
-        Building <span>AI-Powered Products</span>, Business Solutions &amp; Scalable Systems
-      </h1>
-      <p class="hero-intro scroll-reveal">
-        I am a recent engineering graduate with a strong foundation in Artificial Intelligence, business analysis, and product development. Through experience in market research, stakeholder engagement, operational execution, and AI-driven projects, I have developed a systems-thinking approach to solving complex business challenges. I am passionate about transforming ideas into impactful products by combining data-driven decision-making, strategic thinking, and hands-on execution. Currently, I am seeking opportunities to contribute to innovative teams and fast-growing organizations where technology and business intersect.
-      </p>
-      <div class="hero-ctas scroll-reveal">
-        <a href="#projects" class="btn btn-primary">
-          <span>View Projects</span>
-          <svg class="icon" width="16" height="16"><use href="#icon-arrow-right"></use></svg>
-        </a>
-        <button class="btn btn-secondary" id="hero-resume-btn">
-          <span>View Resume</span>
-          <svg class="icon" width="16" height="16"><use href="#icon-download"></use></svg>
-        </button>
-        <a href="#contact" class="btn btn-secondary">Contact Me</a>
-      </div>
-      
-      <div class="hero-socials scroll-reveal">
-        <a href="https://www.linkedin.com/in/srachitshukla/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
-          <svg width="20" height="20"><use href="#icon-linkedin"></use></svg>
-        </a>
-        <a href="https://github.com/ShuklaSrachit/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
-          <svg width="20" height="20"><use href="#icon-github"></use></svg>
-        </a>
-        <a href="mailto:srachit.dev@gmail.com" class="social-link" aria-label="Send Email">
-          <svg width="20" height="20"><use href="#icon-email"></use></svg>
-        </a>
+    <section class="hero-section" id="hero">
+      <!-- Particles canvas background inside hero container -->
+      <canvas id="particles-canvas"></canvas>
+
+      <div class="section-container hero-container">
+        <div class="hero-content-split">
+          <!-- Left Column: Bio / Text -->
+          <div class="hero-left">
+            <span class="hero-subtitle">HELLO!</span>
+            <h1 class="hero-name">I'm Srachit Shukla</h1>
+            <p class="hero-intro">
+              I am a recent engineering graduate with a strong foundation in Artificial Intelligence, product development, and business analysis. Passionate about solving real-world problems through technology, I combine data-driven thinking, strategic problem-solving, and hands-on execution to build impactful products and scalable solutions.
+            </p>
+            <div class="hero-ctas">
+              <a href="#projects" class="btn btn-primary">View Work</a>
+              <button class="btn btn-secondary" id="hero-resume-btn">Hire Me</button>
+            </div>
+            
+            <div class="hero-socials">
+              <a href="https://www.linkedin.com/in/srachitshukla/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                <svg width="20" height="20"><use href="#icon-linkedin"></use></svg>
+              </a>
+              <a href="https://github.com/ShuklaSrachit/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+                <svg width="20" height="20"><use href="#icon-github"></use></svg>
+              </a>
+              <a href="mailto:srachit.dev@gmail.com" class="social-link" aria-label="Send Email">
+                <svg width="20" height="20"><use href="#icon-email"></use></svg>
+              </a>
+            </div>
+          </div>
+          <!-- Right Column: Profile Image -->
+          <div class="hero-right">
+            <div class="hero-image-wrapper">
+              <img src="assets/profile.jpg" alt="Srachit Shukla" class="hero-profile-image">
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -178,16 +165,13 @@
         <div class="about-content">
           <h3>Connecting Engineering, AI and Business Value</h3>
           <p>
-            I recently completed my Bachelor's degree in Mechanical Engineering with Honors in Artificial Intelligence &amp; Machine Learning. My multidisciplinary background allows me to bridge the gap between engineering, technology, and business, enabling me to approach problems from both technical and strategic perspectives.
+            I recently completed my Bachelor's degree in Mechanical Engineering with Honors in Artificial Intelligence &amp; Machine Learning. My interdisciplinary background enables me to bridge technology, business, and user needs to solve complex challenges.
           </p>
           <div class="about-highlight-box">
             <p style="color: var(--color-text); font-weight: 500;">
-              Throughout my academic and project experience, I have worked on AI-powered applications, business analysis initiatives, product documentation systems, and process optimization projects. These experiences have strengthened my ability to analyze user needs, identify opportunities, and design practical solutions that create measurable value.
+              I am particularly interested in Product Management, Business Analysis, and AI-driven products that create meaningful impact.
             </p>
           </div>
-          <p>
-            I am particularly interested in Product Management, Business Analysis, AI Products, and Technology Strategy, where I can combine analytical thinking, user-centric problem solving, and execution skills to help build products that solve real-world challenges. I enjoy working in fast-paced environments, learning new technologies, and collaborating with cross-functional teams to turn ideas into scalable solutions.
-          </p>
           
           <div class="about-skills-focus" style="margin-top: 2rem;">
             <div class="focus-item">
@@ -266,10 +250,10 @@
           <div class="timeline-node"></div>
           <div class="timeline-header">
             <div>
-              <h3 class="timeline-role">Business Solutions Associate Intern</h3>
+              <h3 class="timeline-role">Business Solutions Associate</h3>
               <p class="timeline-company">Teceze India</p>
             </div>
-            <span class="timeline-date">Nov 2024 - Apr 2025</span>
+            <span class="timeline-date">April 2026 - Present</span>
           </div>
           <p>
             Led business intelligence workflows to target and capture new B2B accounts. Conducted primary stakeholder identification and business analysis to drive solution engineering.
@@ -310,7 +294,7 @@
               <h3 class="timeline-role">Operations, Market Insights &amp; Product Inputs Intern</h3>
               <p class="timeline-company">Universal Tools India</p>
             </div>
-            <span class="timeline-date">May 2024 - Jul 2024</span>
+            <span class="timeline-date">Dec 2024 - Feb 2025</span>
           </div>
           <p>
             Spearheaded product-market research for manufacturing and tooling sectors. Gathered data points from 1000+ industrial buyers to deliver core product development inputs.
@@ -620,7 +604,7 @@
           <p class="insight-desc">
             How I applied large language models to automate product development workflows, from raw unstructured idea outlines to sprint-ready JIRA issues.
           </p>
-          <a href="#" class="btn-text">
+          <a href="blog-ai-copilot.html" class="btn-text">
             <span>Read Article</span>
             <svg width="14" height="14"><use href="#icon-arrow-right"></use></svg>
           </a>
@@ -637,7 +621,7 @@
           <p class="insight-desc">
             An analysis of hardware user research and product benchmarking, detailing how industrial tools are adapting to digital interfaces.
           </p>
-          <a href="#" class="btn-text">
+          <a href="blog-imtex-lessons.html" class="btn-text">
             <span>Read Article</span>
             <svg width="14" height="14"><use href="#icon-arrow-right"></use></svg>
           </a>
@@ -654,7 +638,7 @@
           <p class="insight-desc">
             Investigating how neural network property prediction models can optimize quality assurance pipelines in industrial steel processing.
           </p>
-          <a href="#" class="btn-text">
+          <a href="blog-ai-manufacturing.html" class="btn-text">
             <span>Read Article</span>
             <svg width="14" height="14"><use href="#icon-arrow-right"></use></svg>
           </a>
@@ -819,10 +803,10 @@
           <div class="resume-entry">
             <div class="resume-entry-header">
               <div>
-                <span class="resume-entry-title" style="font-weight: 700; color: #FFF;">Business Solutions Associate Intern</span>
+                <span class="resume-entry-title" style="font-weight: 700; color: #FFF;">Business Solutions Associate</span>
                 <div class="resume-entry-company">Teceze India</div>
               </div>
-              <span class="resume-entry-date">Nov 2024 - Apr 2025</span>
+              <span class="resume-entry-date">April 2026 - Present</span>
             </div>
             <ul>
               <li>Identified critical business operations targets and executed primary account identification &amp; stakeholder mapping.</li>
@@ -837,7 +821,7 @@
                 <span class="resume-entry-title" style="font-weight: 700; color: #FFF;">Operations, Market Insights &amp; Product Inputs Intern</span>
                 <div class="resume-entry-company">Universal Tools India</div>
               </div>
-              <span class="resume-entry-date">May 2024 - Jul 2024</span>
+              <span class="resume-entry-date">Dec 2024 - Feb 2025</span>
             </div>
             <ul>
               <li>Surveyed and compiled market benchmarks and competitors, drawing insights on product performance and features.</li>
